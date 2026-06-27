@@ -1,49 +1,45 @@
 # 💰 Expense Tracker System
 
-A Python-based **Expense Tracker System** built using **SQLite** that helps users manage their daily income and expenses through a simple menu-driven command-line interface. The application stores transaction records, categorizes expenses, generates financial summaries, and allows users to search and manage their financial data efficiently.
+A Python-based Expense Tracker System built using SQLite that helps users manage their daily income and expenses through a simple menu-driven command-line interface. The application stores transaction records, categorizes expenses, generates financial reports, and maintains transaction history.
 
 ---
 
 ## 📌 Features
 
 ### 💵 Income Management
-
-* Add Income
-* View Income History
+- Add Income
+- View Income History
 
 ### 💸 Expense Management
+- Add Expense
+- View Expense History
+- Delete Expense
 
-* Add Expense
-* View Expense History
-* Delete Expense
-
-### 🔍 Search Expenses
-
-* Search by Category
-* Search by Date
+### 🔍 Search Transactions
+- Search Expenses by Category
+- Search Expenses by Date
 
 ### 📊 Reports
-
-* Category-wise Expense Report
-* Monthly Expense Report
-* Financial Summary
-* Remaining Balance Calculation
-* Highest Spending Category
+- Category-wise Expense Report
+- Monthly Expense Report
+- Financial Summary
+- Remaining Balance
+- Highest Spending Category
 
 ### 💾 Database
-
-* SQLite Database Integration
-* Automatic Table Creation
-* Persistent Data Storage
+- SQLite Database Integration
+- Automatic Table Creation
+- Persistent Data Storage
 
 ---
 
 ## 🛠️ Technologies Used
 
-* Python 3
-* SQLite (sqlite3)
-* VS Code
-* Git & GitHub
+- Python 3
+- SQLite (sqlite3)
+- Git
+- GitHub
+- VS Code
 
 ---
 
@@ -59,50 +55,49 @@ Expense-Tracker/
 ├── report.py
 ├── search.py
 ├── README.md
-├── .gitignore
-└── screenshots/
+└── .gitignore
 ```
 
 ---
 
-## 🗄️ Database Tables
+## 🗄️ Database Schema
 
-### Income
+### Income Table
 
-| Column | Type                              |
-| ------ | --------------------------------- |
-| id     | INTEGER PRIMARY KEY AUTOINCREMENT |
-| amount | REAL                              |
-| source | TEXT                              |
-| date   | TEXT                              |
+| Column | Type |
+|---------|------|
+| id | INTEGER PRIMARY KEY AUTOINCREMENT |
+| amount | REAL |
+| source | TEXT |
+| date | TEXT |
 
-### Expenses
+### Expense Table
 
-| Column      | Type                              |
-| ----------- | --------------------------------- |
-| id          | INTEGER PRIMARY KEY AUTOINCREMENT |
-| amount      | REAL                              |
-| category    | TEXT                              |
-| description | TEXT                              |
-| date        | TEXT                              |
+| Column | Type |
+|---------|------|
+| id | INTEGER PRIMARY KEY AUTOINCREMENT |
+| amount | REAL |
+| category | TEXT |
+| description | TEXT |
+| date | TEXT |
 
 ---
 
 ## ▶️ How to Run
 
-1. Clone the repository
+Clone the repository
 
 ```bash
 git clone https://github.com/ruchi1234-mithinti/Expense-Tracker.git
 ```
 
-2. Navigate to the project folder
+Go to the project folder
 
 ```bash
 cd Expense-Tracker
 ```
 
-3. Run the application
+Run the project
 
 ```bash
 python main.py
@@ -113,6 +108,8 @@ python main.py
 ## 📋 Menu
 
 ```
+========== Expense Tracker ==========
+
 1. Add Income
 2. View Income
 3. Add Expense
@@ -127,51 +124,29 @@ python main.py
 
 ---
 
-## 📷 Screenshots
-
-Add screenshots of the following:
-
-* Home Menu
-* Add Income
-* Add Expense
-* View Expenses
-* Search Expense
-* Category Report
-* Monthly Report
-* Financial Summary
-
----
-
 ## 🎯 Learning Outcomes
 
 This project demonstrates:
 
-* Python Programming
-* SQLite Database Operations
-* CRUD Operations
-* Menu-Driven Applications
-* Modular Programming
-* Functions
-* SQL Queries
-* Data Management
-* Basic Financial Record Management
+- Python Programming
+- SQLite Database Operations
+- CRUD Operations
+- SQL Queries
+- Menu-Driven Applications
+- Modular Programming
+- Functions
+- Database Connectivity
+- Financial Data Management
 
 ---
 
 ## 🚀 Future Enhancements
 
-* User Authentication
-* Budget Planning
-* Expense Limit Alerts
-* Export Reports to CSV/PDF
-* Graphical Reports
-* GUI using Tkinter
-* Data Backup & Restore
-
----
-
-## 👩‍💻 Author
-
-**Ruchitha Mithinti**
-
-GitHub: https://github.com/ruchi1234-mithinti
+- User Authentication
+- Budget Planning
+- Expense Limit Alerts
+- Export Reports to CSV
+- PDF Report Generation
+- Graphical Reports
+- GUI using Tkinter
+- Data Backup and Restore
